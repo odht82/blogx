@@ -1,0 +1,250 @@
+/* -------------------
+    CSS NORMALIZATION
+---------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* -----------------
+    REGULAR STYLES
+-------------------- */
+main{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    justify-content: center;
+}
+
+
+/* -----------------
+    HEADER SECTION
+-------------------- */
+.blog-head{
+    background-color: #ffffff;
+    height: 120px;
+    padding: 38px;
+    margin-bottom: 40px;
+}
+.navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.nav-menu-btn{
+    width: 30px;
+    height: 15px;
+    cursor: pointer;
+    stroke:black;
+}
+.nav-menu-btn:hover{
+    stroke: #00a2ff;
+}
+.nav-logo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* -----------------
+MAIN SECTION
+-------------------- */
+.blog-content{
+    width: 880px;
+}
+.article-heading-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;    
+    color: #000000;
+}
+.article-heading-date{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: #888888;
+    margin: 15px 0px 10px 0px;
+}
+.article-image{
+    margin: 30px 0px;
+}
+.article-part1,.article-part2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    color: #000000;
+    box-sizing:content-box;
+}
+.article-part2{
+    margin: 40px 0px;
+}
+
+/* ----------------------
+    SOCIAL MEDIA SECTION
+------------------------- */
+.social-media{
+    margin: 60px 0px;
+}
+.social-icon-container{
+    background-color: #EEEEEE;
+    padding: 10px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: unset;
+    margin: 0px 5px;
+}
+.social-icon{
+    height: 20px;
+    width: 20px;
+    fill: black;
+}
+.social-icon:hover{
+    fill: #ffffff;
+}
+.social-media-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icon-container:hover{
+    background-color: #00a2ff;
+}
+      
+/* -----------------
+    Comment SECTION
+-------------------- */
+.article-comment{
+    margin-top: 70px;
+}
+.comment-heading{
+    text-align: center;
+}
+.comment-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+.comment-input{
+    width: 880px;
+    height: 127px;
+    background: #F5F5F5;
+    border: 1px solid #D0D0D0;
+    resize: none;
+}
+.comment-submit-btn{
+    width: 150px;
+    height: 40px;
+    background: #555555;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 14px;    
+    color: #FFFFFF;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.comment-submit-btn:hover{
+    background: #00a2ff;
+}
+
+/* ------------------------
+    COMMENTS LIST SECTION
+--------------------------- */
+.comment-list{
+    margin-top: 80px;
+}
+.blog-comment{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 24px;
+}
+.comment-image{
+    margin-right: 20px;
+    height: 55px;
+    width: 55px;
+}
+.comment-text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #EEEEEE;;
+    padding: 15px;
+}
+.comment-time{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #888888;
+    margin-top: 10px;
+}
+
+/* ----------------------
+    SIMILAR POST SECTION
+------------------------- */
+.similar-post-list{
+    margin-top: 100px;
+}
+.similar-post-heading{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+}
+.similar-post-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.similar-post-card{
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.similar-post-card:hover{
+    background-color: #f2f2f2;
+    transform: scale(1.1)translateY(9px);
+    transition:linear;
+}
+.similar-post-card-image{
+    width: 280px;
+    height: 150px;
+}
+.similar-post-card-text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+/* -----------------
+    FOOTER SECTION
+-------------------- */
+.blog-footer-content{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #888888;
+    margin: 40px 0px 100px 0px;
+}
